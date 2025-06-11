@@ -1,0 +1,309 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design system pour Konfig - Theme noir et rouge gaming */
+
+@layer base {
+  :root {
+    --background: 220 8% 5%; /* Noir profond */
+    --foreground: 0 0% 98%; /* Blanc pur */
+
+    --card: 220 8% 8%; /* Noir carte */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 8% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 84% 55%; /* Rouge vif pour les CTA */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 8% 12%; /* Gris très sombre pour les éléments secondaires */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 8% 10%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 84% 65%; /* Rouge plus clair pour les accents */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 8% 15%;
+    --input: 220 8% 12%;
+    --ring: 0 84% 55%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 8% 5%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 84% 55%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 8% 12%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 8% 15%;
+    --sidebar-ring: 0 84% 55%;
+  }
+
+  .dark {
+    --background: 220 8% 5%;
+    --foreground: 0 0% 98%;
+    --card: 220 8% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 8% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 84% 55%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 8% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 8% 10%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 84% 65%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 8% 15%;
+    --input: 220 8% 12%;
+    --ring: 0 84% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+    padding-top: 0; /* Reset padding-top pour la navbar fixe */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Empêche le scroll horizontal */
+  }
+
+  /* Corrections pour éviter les débordements sur mobile */
+  .container, .max-w-7xl, .max-w-4xl {
+    @apply px-4 sm:px-6 lg:px-8;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Scroll bar personnalisé avec animation */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+
+  /* Smooth scroll avec courbe de bézier personnalisée pour les ancres */
+  * {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  /* Smooth scrolling avec courbe de Bézier pour tous les liens d'ancre */
+  a[href^="#"] {
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Logo KONFIG avec effet néon rouge subtil */
+  .konfig-logo {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.1em;
+    text-shadow: 
+      0 0 5px rgba(239, 68, 68, 0.3),
+      0 0 10px rgba(239, 68, 68, 0.2),
+      0 0 15px rgba(239, 68, 68, 0.1);
+    transition: text-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .konfig-logo:hover {
+    text-shadow: 
+      0 0 8px rgba(239, 68, 68, 0.5),
+      0 0 16px rgba(239, 68, 68, 0.3),
+      0 0 24px rgba(239, 68, 68, 0.2);
+  }
+
+  /* Animations personnalisées pour l'effet gaming rouge */
+  .glow-effect {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+  }
+
+  .hover-glow:hover {
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.5);
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Animations d'entrée pour les pages */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  /* Animation parallax pour les éléments flottants */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Responsive pour les très petits écrans */
+  @media (max-width: 320px) {
+    .text-3xl { font-size: 1.5rem; }
+    .text-4xl { font-size: 1.75rem; }
+    .text-5xl { font-size: 2rem; }
+    .text-6xl { font-size: 2.5rem; }
+    .text-8xl { font-size: 3rem; }
+  }
+
+  /* Améliorations pour les images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Corrections pour les grids responsive */
+  .grid {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .grid {
+      gap: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .grid {
+      gap: 2rem;
+    }
+  }
+
+  /* Classe pour corriger l'espacement avec la navbar fixe */
+  .page-header-spacing {
+    padding-top: 6rem; /* 96px - hauteur navbar (64px) + 32px d'espacement */
+  }
+}
+
+@layer components {
+  .pc-card {
+    @apply bg-card border border-border rounded-lg p-4 md:p-6 hover:border-accent transition-all duration-300 hover-glow;
+  }
+
+  .fps-badge {
+    @apply inline-flex items-center justify-center px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-primary/10 text-primary border border-primary/20 text-center min-w-[2.5rem] sm:min-w-[3rem];
+  }
+
+  .component-list {
+    @apply space-y-3;
+  }
+
+  .component-item {
+    @apply flex justify-between items-center py-2 border-b border-border/50 last:border-b-0;
+  }
+
+  .budget-badge {
+    @apply inline-flex items-center px-4 py-2 rounded-full text-lg font-bold bg-primary text-primary-foreground;
+  }
+
+  .buy-links {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-2 mt-4;
+  }
+
+  .buy-link {
+    @apply inline-flex items-center justify-center px-3 py-2 text-xs bg-secondary hover:bg-secondary/80 text-secondary-foreground rounded transition-colors;
+  }
+
+  /* Améliorations responsive pour les composants */
+  .responsive-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .responsive-text {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6;
+  }
+
+  /* Styles optimisés pour les cartes de budget */
+  .budget-card {
+    @apply relative p-3 md:p-4 rounded-lg border border-border hover:border-primary transition-all duration-300 bg-card hover:bg-card/80;
+  }
+
+  .budget-card .budget-image {
+    @apply aspect-square mb-2 rounded-lg overflow-hidden;
+  }
+
+  .budget-card .budget-content {
+    @apply text-center space-y-1.5 md:space-y-2;
+  }
+
+  .budget-card .budget-price {
+    @apply flex items-center justify-center;
+  }
+
+  .budget-card .budget-title {
+    @apply font-semibold text-foreground group-hover:text-primary transition-colors text-sm md:text-base leading-tight;
+  }
+
+  .budget-card .budget-description {
+    @apply text-xs md:text-sm text-muted-foreground leading-tight;
+  }
+
+  /* Styles responsive pour les boutons CTA - Utilisation de tailles relatives */
+  .cta-button {
+    @apply w-full px-4 py-3 sm:w-auto sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-12 hover-glow;
+    font-size: clamp(0.875rem, 2.5vw, 1.125rem); /* Taille fluide entre 14px et 18px */
+  }
+
+  /* Améliorations pour les performances gaming en responsive - Tailles relatives */
+  .performance-item {
+    @apply flex flex-col gap-2 p-2 bg-secondary/30 rounded-lg sm:flex-row sm:justify-between sm:items-center sm:p-3 sm:rounded-xl sm:gap-0;
+  }
+
+  .performance-game {
+    @apply text-muted-foreground font-medium;
+    font-size: clamp(0.75rem, 2vw, 1rem); /* Taille fluide entre 12px et 16px */
+  }
+
+  .performance-fps {
+    @apply inline-flex items-center justify-center px-2 py-1 rounded-full font-mono font-bold bg-primary text-primary-foreground border border-primary/20 min-w-[2rem] sm:px-3 sm:min-w-[2.5rem] md:min-w-[3rem];
+    font-size: clamp(0.75rem, 1.8vw, 0.875rem); /* Taille fluide entre 12px et 14px */
+  }
+}
