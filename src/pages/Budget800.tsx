@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 const Budget800 = () => {
   const config = {
     id: 'budget-800',
-    name: "LA PORTE D'ENTRÉE INTELLIGENTE",
+    name: "ENTRÉE DE GAMME 2025",
     price: '800€',
     budget: '800€',
     idealFor: "Jouer à tous les jeux en 1080p avec des réglages Élevés/Ultra à 60 FPS et plus.",

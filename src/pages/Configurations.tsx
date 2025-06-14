@@ -22,7 +22,7 @@ const Configurations = () => {
     { name: 'Amazon.de', url: 'https://amazon.de' },
     { name: 'Amazon.fr', url: 'https://amazon.fr' },
     { name: 'MemoryPC', url: 'https://memorypc.de' },
-    { name: 'FlowUp', url: 'https://flowup.fr' }
+    { name: 'FlowUp', url: 'https://flowup.shop' }
   ];
 
   return (

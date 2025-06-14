@@ -7,10 +7,10 @@ import ScrollReveal from '@/components/ScrollReveal';
 const Budget1500 = () => {
   const config = {
     id: 'budget-1500',
-    name: "LE ROI DU 1440P",
+    name: "LA PORTE D'ENTRÉE 1440P",
     price: '1500€',
     budget: '1500€',
-    idealFor: "Jouer à tous les jeux en 1440p Ultra à haute fréquence (144Hz+) sans aucun compromis.",
+    idealFor: "Jouer à tous vos jeux en 1440p",
     image: 'https://static.digit.in/MSI-DIY-PC-Build-2024-Opening.jpg',
     youtubeUrl: 'https://www.youtube.com/results?search_query=RX+7800+XT+%2B+Ryzen+5+9600X+gaming+benchmark+2025',
     topAchatUrl: 'https://www.topachat.com/pages/configomatic/42bafafd-6f92-49fa-b86a-8aa9370f78d2',

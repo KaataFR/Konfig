@@ -63,7 +63,19 @@ const SitesRecommandes = () => {
       rating: 4.2,
       speciality: 'PC assemblés',
       shipping: 'Frais selon poids'
+    },
+    {
+      "name": "Flow Up",
+      "url": "https://flowup.shop",
+      "logo": "🇫🇷",
+      "description": "Assembleur français de PC gaming sur mesure et optimisés.",
+      "pros": ["Montage premium", "Optimisation incluse", "SAV personnalisé"],
+      "cons": ["Prix élevés", "Délais parfois longs"],
+      "rating": 4.8,
+      "speciality": "PC sur mesure",
+      "shipping": "Payante"
     }
+
   ];
 
   const getSpecialityIcon = (speciality: string) => {
@@ -81,7 +93,7 @@ const SitesRecommandes = () => {
   return (
     <div className="min-h-screen bg-background animate-fade-in">
       <Navbar />
-      
+
       {/* Header */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-primary/10 via-transparent to-accent/5">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -110,25 +122,25 @@ const SitesRecommandes = () => {
                       {getSpecialityIcon(site.speciality)} {site.speciality}
                     </Badge>
                   </div>
-                  
+
                   <div className="flex items-center space-x-2">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
-                        <Star 
-                          key={i} 
-                          className={`h-4 w-4 ${i < Math.floor(site.rating) ? 'text-yellow-500 fill-current' : 'text-gray-300'}`} 
+                        <Star
+                          key={i}
+                          className={`h-4 w-4 ${i < Math.floor(site.rating) ? 'text-yellow-500 fill-current' : 'text-gray-300'}`}
                         />
                       ))}
                     </div>
                     <span className="text-sm text-muted-foreground">{site.rating}/5</span>
                   </div>
                 </CardHeader>
-                
+
                 <CardContent className="space-y-4">
                   <p className="text-muted-foreground text-sm">
                     {site.description}
                   </p>
-                  
+
                   <div className="space-y-3">
                     <div>
                       <h4 className="text-sm font-semibold text-green-500 mb-2 flex items-center">
@@ -141,7 +153,7 @@ const SitesRecommandes = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h4 className="text-sm font-semibold text-orange-500 mb-2">Inconvénients</h4>
                       <ul className="text-xs text-muted-foreground space-y-1">
@@ -151,7 +163,7 @@ const SitesRecommandes = () => {
                       </ul>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center justify-between text-xs text-muted-foreground pt-2 border-t border-border">
                     <div className="flex items-center">
                       <Truck className="h-3 w-3 mr-1" />
@@ -162,7 +174,7 @@ const SitesRecommandes = () => {
                       France
                     </div>
                   </div>
-                  
+
                   <Button asChild className="w-full hover-glow">
                     <a href={site.url} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
@@ -182,7 +194,7 @@ const SitesRecommandes = () => {
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
             Conseils d'Achat
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="pc-card">
               <CardContent className="p-6">
@@ -191,7 +203,7 @@ const SitesRecommandes = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Comparer les Prix</h3>
                     <p className="text-muted-foreground text-sm">
-                      Utilisez des comparateurs comme Idealo ou Google Shopping pour trouver le meilleur prix. 
+                      Utilisez des comparateurs comme Idealo ou Google Shopping pour trouver le meilleur prix.
                       Les écarts peuvent être significatifs entre sites.
                     </p>
                   </div>
@@ -206,7 +218,7 @@ const SitesRecommandes = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Garantie & SAV</h3>
                     <p className="text-muted-foreground text-sm">
-                      Privilégiez les sites français pour un SAV en français. 
+                      Privilégiez les sites français pour un SAV en français.
                       Vérifiez les conditions de garantie avant achat.
                     </p>
                   </div>
@@ -221,7 +233,7 @@ const SitesRecommandes = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Livraison</h3>
                     <p className="text-muted-foreground text-sm">
-                      Attention aux frais de livraison qui peuvent changer la donne. 
+                      Attention aux frais de livraison qui peuvent changer la donne.
                       Amazon Prime est souvent rentable pour plusieurs achats.
                     </p>
                   </div>
@@ -236,7 +248,7 @@ const SitesRecommandes = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-2">Avis Clients</h3>
                     <p className="text-muted-foreground text-sm">
-                      Lisez les avis clients, surtout pour les alimentations et boîtiers. 
+                      Lisez les avis clients, surtout pour les alimentations et boîtiers.
                       Méfiez-vous des notes trop parfaites ou trop mauvaises.
                     </p>
                   </div>
