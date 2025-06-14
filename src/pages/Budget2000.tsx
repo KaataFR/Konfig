@@ -33,7 +33,7 @@ const Budget2000 = () => {
       { game: 'Fortnite (1440p, Ultra)', fps: '240+ FPS' },
       { game: 'Call of Duty: Warzone (1440p Ultra)', fps: '180-200 FPS' }
     ],
-    notes: "Prix total : ~2015 €. Le 7800X3D roi du gaming associé à une carte graphique nouvelle génération très puissante. Double capacité SSD et composants de haute qualité sans compromis.",
+    notes: " (MAJ : 14/06/2025) - Prix total : ~2015 €. Le 7800X3D roi du gaming associé à une carte graphique nouvelle génération très puissante. Double capacité SSD et composants de haute qualité sans compromis.",
     highlights: ['RX 9070 XT', '1440p/4K Gaming', 'Ventirad', '160 FPS moyen']
   };
 

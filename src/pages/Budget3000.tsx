@@ -33,7 +33,7 @@ const Budget3000 = () => {
       { game: 'Call of Duty: Warzone (4K Ultra)', fps: '120-150 FPS' },
       { game: 'Elden Ring (4K Ultra)', fps: '60 FPS' }
     ],
-    notes: "Prix total : ~2986 €. Machine conçue pour la domination en 4K. Duo CPU/GPU au sommet de la performance avec fondations renforcées (X670E, 1000W) et refroidissement AIO 360mm.",
+    notes: " (MAJ : 14/06/2025) - Prix total : ~2986 €. Machine conçue pour la domination en 4K. Duo CPU/GPU au sommet de la performance avec fondations renforcées (X670E, 1000W) et refroidissement AIO 360mm.",
     highlights: ['RTX 5080', '4K Gaming', 'Watercooling', '130 FPS moyen']
   };
 

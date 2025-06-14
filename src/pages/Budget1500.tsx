@@ -33,7 +33,7 @@ const Budget1500 = () => {
       { game: 'Call of Duty: Warzone (1440p Ultra)', fps: '130-150 FPS' },
       { game: 'Elden Ring (1440p Ultra)', fps: '60 FPS' }
     ],
-    notes: "Prix total : ~1502 €. Entrée dans le haut de gamme avec processeur nouvelle génération et carte graphique très puissante pour le 1440p. Composants de haute qualité pour performance, silence et fiabilité.",
+    notes: " (MAJ : 14/06/2025) - Prix total : ~1502 €. Entrée dans le haut de gamme avec processeur nouvelle génération et carte graphique très puissante pour le 1440p. Composants de haute qualité pour performance, silence et fiabilité.",
     highlights: ['RX 7800 XT', '1440p Gaming', 'Ventirad', '140 FPS moyen']
   };
 

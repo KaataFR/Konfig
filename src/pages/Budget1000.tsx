@@ -33,7 +33,7 @@ const Budget1000 = () => {
       { game: 'Call of Duty: Warzone (1080p Ultra)', fps: '120-140 FPS' },
       { game: 'Elden Ring (1080p Ultra)', fps: '60 FPS' }
     ],
-    notes: "Prix total : ~1075 €. Passage sur la plateforme moderne AM5 avec DDR5. Investissement pour l'avenir avec de meilleures performances de base et une excellente évolutivité.",
+    notes: " (MAJ : 14/06/2025) - Prix total : ~1075 €. Passage sur la plateforme moderne AM5 avec DDR5. Investissement pour l'avenir avec de meilleures performances de base et une excellente évolutivité.",
     highlights: ['RX 7700 XT', '1080p/1440p', 'Ventirad', '120 FPS moyen']
   };
 

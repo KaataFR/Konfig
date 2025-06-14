@@ -32,7 +32,7 @@ const Budget5000 = () => {
       { game: 'Fortnite (4K, Ultra)', fps: '240+ FPS' },
       { game: 'Call of Duty: Warzone (4K Ultra)', fps: '180-220 FPS' }
     ],
-    notes: "Prix total : ~4963 €. Configuration ultime sans regard sur le prix. Meilleur processeur, RTX 5090, et composants de prestige avec écran LCD watercooling et boîtier aquarium. Machine et objet d'art.",
+    notes: " (MAJ : 14/06/2025) - Prix total : ~4963 €. Configuration ultime sans regard sur le prix. Meilleur processeur, RTX 5090, et composants de prestige avec écran LCD watercooling et boîtier aquarium. Machine et objet d'art.",
     highlights: ['RTX 5090', '4K Gaming', 'Watercooling', '180 FPS moyen']
   };
 

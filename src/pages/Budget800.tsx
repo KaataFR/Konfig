@@ -33,7 +33,7 @@ const Budget800 = () => {
       { game: 'Call of Duty: Warzone (1080p Élevé)', fps: '75-85 FPS' },
       { game: 'Elden Ring (1080p Ultra)', fps: '60 FPS' }
     ],
-    notes: "Prix total : ~750 €. Plateforme AM4 mature et abordable pour maximiser l'allocation du budget sur la carte graphique RTX 5060. Chaque composant optimisé pour le rapport performance/prix.",
+    notes: " (MAJ : 14/06/2025) - Prix total : ~750 €. Plateforme AM4 mature et abordable pour maximiser l'allocation du budget sur la carte graphique RTX 5060. Chaque composant optimisé pour le rapport performance/prix.",
     highlights: ['RTX 5060', '1080p Gaming', 'Ventirad', '80 FPS moyen']
   };
 

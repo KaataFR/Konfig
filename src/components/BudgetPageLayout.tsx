@@ -174,18 +174,18 @@ const BudgetPageLayout: React.FC<BudgetPageLayoutProps> = ({ config, customBadge
                   <div className="grid grid-cols-2 gap-3 md:gap-6 text-center">
                     <div className="bg-secondary/50 p-3 md:p-4 rounded-lg">
                       <div className="text-lg md:text-xl font-bold text-primary mb-1">
-                        {config.budget === '600€' || config.budget === '1000€' ? '1080p' :
-                          config.budget === '1500€' ? '1440p' : '4K'}
+                        {config.budget === '800€' || config.budget === '1000€' ? '1080p' :
+                          config.budget === '1500€' ? '1440p' :  config.budget === '2000€' ? '1440p' : '4K'}
                       </div>
                       <div className="text-xs md:text-sm text-muted-foreground">Résolution</div>
                     </div>
                     <div className="bg-secondary/50 p-3 md:p-4 rounded-lg">
                       <div className="text-lg md:text-xl font-bold text-primary mb-1">
-                        {config.budget === '600€' ? '60-100' :
-                          config.budget === '1000€' ? '60-100' :
-                            config.budget === '1500€' ? '100+' :
-                              config.budget === '2000€' ? '60+' :
-                                config.budget === '2500€' ? '100+' : '120+'} FPS
+                        {config.budget === '800€' ? '60-90' :
+                          config.budget === '1000€' ? '144+' :
+                            config.budget === '1500€' ? '144+' :
+                              config.budget === '2000€' ? '200+' :
+                                config.budget === '3000€' ? '100+' : '144+'} FPS
                       </div>
                       <div className="text-xs md:text-sm text-muted-foreground">Performance</div>
                     </div>

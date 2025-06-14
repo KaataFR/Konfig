@@ -16,8 +16,7 @@ const Footer = () => {
               <span className="text-xl font-bold konfig-logo">KONFIG</span>
             </div>
             <p className="text-muted-foreground max-w-md">
-              Conseils et configurations PC Gaming 2025. De 600€ à 4000€, 
-              trouvez la configuration parfaite pour votre budget et vos besoins gaming.
+              Conseils et configurations PC Gaming 2025. De 800€ à 5000€, trouvez la configuration parfaite pour votre budget et vos besoins gaming.
             </p>
           </div>
 

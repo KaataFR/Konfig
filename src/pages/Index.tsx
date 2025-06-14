@@ -50,7 +50,7 @@ const Index = () => {
     {
       icon: <Gamepad2 className="h-8 w-8 text-primary" />,
       title: "6 Budgets Clairs",
-      description: "De 600€ à 4000€, trouvez la configuration adaptée à vos ambitions gaming."
+      description: "De 800€ à 5000€, trouvez la configuration adaptée à vos ambitions gaming."
     }
   ];
 
