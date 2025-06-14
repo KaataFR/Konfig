@@ -175,7 +175,7 @@ const BudgetPageLayout: React.FC<BudgetPageLayoutProps> = ({ config, customBadge
                     <div className="bg-secondary/50 p-3 md:p-4 rounded-lg">
                       <div className="text-lg md:text-xl font-bold text-primary mb-1">
                         {config.budget === '800€' || config.budget === '1000€' ? '1080p' :
-                          config.budget === '1500€' ? '1440p' :  config.budget === '2000€' ? '1440p' : config.budget === '3000€' ? '4K': '4K-8K'}
+                          config.budget === '1500€' ? '1440p' :  config.budget === '2000€' ? '1440p-4K' : config.budget === '3000€' ? '4K': '4K-8K'}
                       </div>
                       <div className="text-xs md:text-sm text-muted-foreground">Résolution</div>
                     </div>
