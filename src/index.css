@@ -225,7 +225,7 @@
   }
 
   .fps-badge {
-    @apply inline-flex items-center justify-center px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-primary/10 text-primary border border-primary/20 text-center min-w-[2.5rem] sm:min-w-[3rem];
+    @apply inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20 text-center min-w-[3rem];
   }
 
   .component-list {
@@ -284,26 +284,5 @@
 
   .budget-card .budget-description {
     @apply text-xs md:text-sm text-muted-foreground leading-tight;
-  }
-
-  /* Styles responsive pour les boutons CTA - Utilisation de tailles relatives */
-  .cta-button {
-    @apply w-full px-4 py-3 sm:w-auto sm:px-6 sm:py-3 md:px-8 md:py-4 lg:px-12 hover-glow;
-    font-size: clamp(0.875rem, 2.5vw, 1.125rem); /* Taille fluide entre 14px et 18px */
-  }
-
-  /* Améliorations pour les performances gaming en responsive - Tailles relatives */
-  .performance-item {
-    @apply flex flex-col gap-2 p-2 bg-secondary/30 rounded-lg sm:flex-row sm:justify-between sm:items-center sm:p-3 sm:rounded-xl sm:gap-0;
-  }
-
-  .performance-game {
-    @apply text-muted-foreground font-medium;
-    font-size: clamp(0.75rem, 2vw, 1rem); /* Taille fluide entre 12px et 16px */
-  }
-
-  .performance-fps {
-    @apply inline-flex items-center justify-center px-2 py-1 rounded-full font-mono font-bold bg-primary text-primary-foreground border border-primary/20 min-w-[2rem] sm:px-3 sm:min-w-[2.5rem] md:min-w-[3rem];
-    font-size: clamp(0.75rem, 1.8vw, 0.875rem); /* Taille fluide entre 12px et 14px */
   }
 }

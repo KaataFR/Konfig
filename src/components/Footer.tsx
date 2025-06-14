@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Monitor, Mail, ExternalLink } from 'lucide-react';
 import { FaTiktok, FaYoutube } from 'react-icons/fa';
+import { SiDiscord } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -56,6 +57,15 @@ const Footer = () => {
                 title="Email"
               >
                 <Mail className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://discord.gg/Fg78FgXp" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-[#5865F2] transition-colors"
+                title="Discord"
+              >
+                <SiDiscord className="h-5 w-5" />
               </a>
               <a 
                 href="https://linktr.ee/KaataFR" 

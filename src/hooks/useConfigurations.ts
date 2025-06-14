@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import configurationsData from '../data/configurations.json';
 
@@ -28,7 +29,6 @@ export interface Configuration {
   popular: boolean;
   image: string;
   youtubeUrl: string;
-  lastUpdated: string;
   components: ConfigComponent;
   performances: ConfigPerformance[];
   notes: string;

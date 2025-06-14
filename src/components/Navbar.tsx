@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Euro } from 'lucide-react';
@@ -16,12 +15,12 @@ const Navbar = () => {
   ];
 
   const budgetRanges = [
-    { price: '600€', href: '/budget-600' },
+    { price: '800€', href: '/budget-800' },
     { price: '1000€', href: '/budget-1000' },
     { price: '1500€', href: '/budget-1500' },
     { price: '2000€', href: '/budget-2000' },
-    { price: '2500€', href: '/budget-2500' },
-    { price: '4000€', href: '/budget-4000' },
+    { price: '3000€', href: '/budget-3000' },
+    { price: '5000€', href: '/budget-5000' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

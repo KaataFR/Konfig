@@ -1,49 +1,16 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Mail, MessageSquare, Clock, CheckCircle } from 'lucide-react';
+import { MessageSquare, Users, HelpCircle, ArrowRight, ExternalLink } from 'lucide-react';
+import { SiDiscord } from 'react-icons/si';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    budget: '',
-    usage: '',
-    message: ''
-  });
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { id, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [id]: value
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const subject = `Demande de conseil PC Gaming - ${formData.name}`;
-    const body = `Bonjour,
-
-Nom: ${formData.name}
-Email: ${formData.email}
-Budget: ${formData.budget}
-Usage principal: ${formData.usage}
-
-Message:
-${formData.message}
-
-Cordialement,
-${formData.name}`;
-
-    const mailtoLink = `mailto:kaatafr@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailtoLink;
+  const handleDiscordRedirect = () => {
+    window.open('https://discord.gg/Fg78FgXp', '_blank');
   };
 
   return (
@@ -51,155 +18,111 @@ ${formData.name}`;
       <Navbar />
       
       {/* Header */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-primary/10 via-transparent to-accent/5">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Contactez-nous
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Besoin de conseils personnalisés pour votre configuration PC ? 
-            Notre équipe est là pour vous aider !
-          </p>
-        </div>
-      </section>
+      <ScrollReveal>
+        <section className="py-12 md:py-16 bg-gradient-to-br from-primary/10 via-transparent to-accent/5">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Rejoignez notre communauté
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
+              Échangez avec d'autres passionnés de PC Gaming, partagez vos builds et obtenez des conseils personnalisés !
+            </p>
+          </div>
+        </section>
+      </ScrollReveal>
 
-      {/* Contact Form */}
+      {/* Discord Section */}
       <section className="py-12 md:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-            {/* Form - Largeur augmentée */}
-            <div className="lg:col-span-2">
-              <Card className="pc-card">
-                <CardHeader>
-                  <CardTitle className="flex items-center text-lg md:text-xl">
-                    <MessageSquare className="h-6 w-6 text-primary mr-3" />
-                    Demande de Conseil
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium text-foreground">
-                        Nom *
-                      </label>
-                      <Input 
-                        id="name" 
-                        placeholder="Votre nom" 
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required 
-                      />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid gap-8">
+            {/* Discord Main Card */}
+            <ScrollReveal delay={200}>
+              <Card className="pc-card glow-effect">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-[#5865F2] rounded-full flex items-center justify-center mx-auto mb-4">
+                      <SiDiscord className="h-8 w-8 text-white" />
                     </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium text-foreground">
-                        Email *
-                      </label>
-                      <Input 
-                        id="email" 
-                        type="email" 
-                        placeholder="votre@email.com" 
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required 
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="budget" className="text-sm font-medium text-foreground">
-                        Budget approximatif
-                      </label>
-                      <Input 
-                        id="budget" 
-                        placeholder="ex: 1500€" 
-                        value={formData.budget}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="usage" className="text-sm font-medium text-foreground">
-                        Usage principal
-                      </label>
-                      <Input 
-                        id="usage" 
-                        placeholder="ex: Gaming 1440p, Streaming, Travail..." 
-                        value={formData.usage}
-                        onChange={handleInputChange}
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="message" className="text-sm font-medium text-foreground">
-                        Message *
-                      </label>
-                      <Textarea 
-                        id="message" 
-                        placeholder="Décrivez vos besoins, vos jeux favoris, vos contraintes..."
-                        className="min-h-[120px]"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required 
-                      />
-                    </div>
-                    
-                    <Button type="submit" className="w-full hover-glow">
-                      <Mail className="h-4 w-4 mr-2" />
-                      Envoyer ma demande
-                    </Button>
-                  </form>
+                    <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                      Discord KONFIG
+                    </h2>
+                    <p className="text-muted-foreground text-lg">
+                      Rejoignez notre serveur Discord pour des conseils en temps réel
+                    </p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="bg-[#5865F2] hover:bg-[#4752C4] text-white px-8 py-4 text-lg"
+                    onClick={handleDiscordRedirect}
+                  >
+                    <SiDiscord className="h-5 w-5 mr-2" />
+                    Rejoindre Discord
+                    <ArrowRight className="h-5 w-5 ml-2" />
+                  </Button>
                 </CardContent>
               </Card>
+            </ScrollReveal>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: <Users className="h-5 w-5 text-primary mr-3" />,
+                  title: "Communauté Active",
+                  description: "Des centaines de passionnés prêts à vous aider dans vos projets PC Gaming"
+                },
+                {
+                  icon: <HelpCircle className="h-5 w-5 text-primary mr-3" />,
+                  title: "Conseils Gratuits", 
+                  description: "Obtenez des conseils personnalisés selon votre budget et vos besoins"
+                },
+                {
+                  icon: <MessageSquare className="h-5 w-5 text-primary mr-3" />,
+                  title: "Partage d'Expérience",
+                  description: "Partagez vos builds, vos expériences et découvrez celles des autres"
+                }
+              ].map((feature, index) => (
+                <ScrollReveal key={index} delay={400 + index * 150}>
+                  <Card className="pc-card">
+                    <CardHeader>
+                      <CardTitle className="flex items-center text-lg">
+                        {feature.icon}
+                        {feature.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground text-sm">
+                        {feature.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
             </div>
 
-            {/* Info - Largeur réduite */}
-            <div className="lg:col-span-1">
-              <div className="space-y-6 lg:space-y-8">
-                <Card className="pc-card">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <Clock className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-2">Temps de Réponse</h3>
-                        <p className="text-muted-foreground text-sm md:text-base">
-                          Nous répondons généralement sous 24h. Les conseils sont entièrement gratuits !
-                        </p>
-                      </div>
+            {/* Info Card */}
+            <ScrollReveal delay={800}>
+              <Card className="pc-card">
+                <CardContent className="p-6 text-center">
+                  <h3 className="font-semibold text-foreground mb-4">
+                    Pourquoi rejoindre notre Discord ?
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
+                    <div className="space-y-2">
+                      <p>• Conseils en temps réel de la communauté</p>
+                      <p>• Partage de configurations et benchmarks</p>
+                      <p>• Alerts sur les bonnes affaires hardware</p>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="pc-card">
-                  <CardContent className="p-6">
-                    <div className="flex items-start space-x-4">
-                      <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                      <div>
-                        <h3 className="font-semibold text-foreground mb-2">Ce que nous proposons</h3>
-                        <ul className="text-muted-foreground space-y-2 text-sm md:text-base">
-                          <li>• Conseils personnalisés selon votre budget</li>
-                          <li>• Optimisation de configurations existantes</li>
-                          <li>• Aide au choix des composants</li>
-                          <li>• Compatibilité et assemblage</li>
-                          <li>• Recommandations de sites de vente</li>
-                        </ul>
-                      </div>
+                    <div className="space-y-2">
+                      <p>• Aide au montage et dépannage</p>
+                      <p>• Discussions sur les nouveautés tech</p>
+                      <p>• Événements et concours communautaires</p>
                     </div>
-                  </CardContent>
-                </Card>
-
-                <Card className="pc-card glow-effect">
-                  <CardContent className="p-6">
-                    <h3 className="font-semibold text-foreground mb-4 text-center">
-                      Service 100% Gratuit
-                    </h3>
-                    <p className="text-muted-foreground text-center text-sm md:text-base">
-                      Nos conseils PC Gaming sont entièrement gratuits. 
-                      Notre passion, c'est de vous aider à trouver la configuration parfaite !
-                    </p>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </ScrollReveal>
           </div>
         </div>
       </section>
