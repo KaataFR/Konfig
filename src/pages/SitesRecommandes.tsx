@@ -10,6 +10,17 @@ import Footer from '@/components/Footer';
 const SitesRecommandes = () => {
   const sites = [
     {
+      name: "Flow Up",
+      url: "https://flowup.shop",
+      logo: "🇫🇷",
+      description: "Assembleur français de PC gaming sur mesure et optimisés.",
+      pros: ["Montage premium", "Optimisation incluse", "SAV personnalisé"],
+      cons: ["Prix parfois plus élevés", "Délais parfois longs"],
+      rating: 4.8,
+      speciality: "PC sur mesure",
+      shipping: "Payante"
+    }, 
+    {
       name: 'Amazon.fr',
       url: 'https://amazon.fr',
       logo: '🇫🇷',
@@ -30,17 +41,6 @@ const SitesRecommandes = () => {
       rating: 4.3,
       speciality: 'Économique',
       shipping: 'Variable selon produit'
-    },
-    {
-      name: 'TopAchat',
-      url: 'https://topachat.com',
-      logo: '🇫🇷',
-      description: 'E-commerçant français spécialisé en informatique et high-tech.',
-      pros: ['Prix attractifs', 'Promotions fréquentes', 'Livraison rapide', 'Service français'],
-      cons: ['Interface parfois datée', 'SAV variable'],
-      rating: 4.1,
-      speciality: 'Rapport qualité/prix',
-      shipping: 'Gratuite dès 50€'
     },
     {
       name: 'Materiel.net',
@@ -65,15 +65,15 @@ const SitesRecommandes = () => {
       shipping: 'Frais selon poids'
     },
     {
-      "name": "Flow Up",
-      "url": "https://flowup.shop",
-      "logo": "🇫🇷",
-      "description": "Assembleur français de PC gaming sur mesure et optimisés.",
-      "pros": ["Montage premium", "Optimisation incluse", "SAV personnalisé"],
-      "cons": ["Prix élevés", "Délais parfois longs"],
-      "rating": 4.8,
-      "speciality": "PC sur mesure",
-      "shipping": "Payante"
+      name: 'TopAchat',
+      url: 'https://topachat.com',
+      logo: '🇫🇷',
+      description: 'E-commerçant français spécialisé en informatique et high-tech.',
+      pros: ['Prix attractifs', 'Promotions fréquentes', 'Livraison rapide', 'Service français'],
+      cons: ['Interface parfois datée', 'SAV variable'],
+      rating: 4.1,
+      speciality: 'Rapport qualité/prix',
+      shipping: 'Gratuite dès 50€'
     }
 
   ];

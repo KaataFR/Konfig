@@ -15,12 +15,12 @@ const Budget3000 = () => {
     youtubeUrl: 'https://www.youtube.com/results?search_query=RTX+5080+%2B+Ryzen+7+9800X3D+gaming+benchmark+2025',
     topAchatUrl: 'https://www.topachat.com/pages/configomatic/ae998031-c331-4649-9931-9e52160f2457',
     components: {
+      gpu: 'NVIDIA GeForce RTX 5080 (~1250 €)',
       cpu: 'AMD Ryzen 7 9800X3D (~560 €)',
       cooling: 'MSI MAG CORELIQUID 360R V2 (~140 €)',
-      gpu: 'NVIDIA GeForce RTX 5080 (~1250 €)',
+      motherboard: 'MSI MAG X670E TOMAHAWK WIFI (~316 €)',
       ram: '32 Go DDR5 6000MHz CL30 (~150 €)',
       storage: '2 To KIOXIA EXCERIA PRO G3 NVMe (~200 €)',
-      motherboard: 'MSI MAG X670E TOMAHAWK WIFI (~316 €)',
       psu: 'Corsair RM1000e 1000W (~170 €)',
       case: 'Hyte Y60 (~200 €)'
     },

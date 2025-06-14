@@ -15,12 +15,12 @@ const Budget5000 = () => {
     youtubeUrl: 'https://www.youtube.com/results?search_query=RTX+5090+%2B+Ryzen+9+9950X3D+gaming+benchmark+2025',
     topAchatUrl: 'https://www.topachat.com/pages/configomatic/54f6fb22-cf95-45bb-ad64-c87c1893e8c8',
     components: {
+      gpu: 'NVIDIA GeForce RTX 5090 (~2550 €)',
       cpu: 'AMD Ryzen 9 9950X3D (~830 €)',
       cooling: 'Asus ROG STRIX LC III 360 ARGB LCD (~250 €)',
-      gpu: 'NVIDIA GeForce RTX 5090 (~2550 €)',
+      motherboard: 'MSI MPG X670E CARBON WIFI (~480 €)',
       ram: '32 Go DDR5 6000MHz CL30 (~153 €)',
       storage: '2 To Crucial T700 PCIe 5.0 (~220 €)',
-      motherboard: 'MSI MPG X670E CARBON WIFI (~480 €)',
       psu: 'be quiet! Straight Power 12 1200W (~250 €)',
       case: 'NZXT H9 Elite (~230 €)'
     },

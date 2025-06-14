@@ -15,12 +15,12 @@ const Budget2000 = () => {
     youtubeUrl: 'https://www.youtube.com/results?search_query=RX+9070+XT+%2B+Ryzen+7+7800X3D+gaming+benchmark+2025',
     topAchatUrl: 'https://www.topachat.com/pages/configomatic/60b6c993-7bc2-4820-bf3f-4b77e85a1208',
     components: {
+      gpu: 'AMD Radeon RX 9070 XT (~750 €)',
       cpu: 'AMD Ryzen 7 7800X3D (~450 €)',
       cooling: 'Thermalright Phantom Spirit 120 EVO (~75 €)',
-      gpu: 'AMD Radeon RX 9070 XT (~750 €)',
+      motherboard: 'ASUS TUF GAMING B650M-E WIFI (~200 €)',
       ram: '32 Go DDR5 6000MHz CL30 (~150 €)',
       storage: '2 To Kingston KC3000 NVMe (~160 €)',
-      motherboard: 'ASUS TUF GAMING B650M-E WIFI (~200 €)',
       psu: 'MSI MAG A850GL PCIE5 850W (~120 €)',
       case: 'Corsair 4000D Airflow (~110 €)'
     },

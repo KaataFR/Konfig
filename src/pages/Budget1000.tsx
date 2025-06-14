@@ -15,12 +15,12 @@ const Budget1000 = () => {
     youtubeUrl: 'https://www.youtube.com/results?search_query=RX+7700+XT+%2B+Ryzen+5+7600+gaming+benchmark+2025',
     topAchatUrl: 'https://www.topachat.com/pages/configomatic/95fbcdf7-48e7-4d7d-b384-15f87de7274d',
     components: {
+      gpu: 'AMD Radeon RX 7700 XT (~380 €)',
       cpu: 'AMD Ryzen 5 7600 (~195 €)',
       cooling: 'Thermalright Phantom Spirit 120 SE (~40 €)',
-      gpu: 'AMD Radeon RX 7700 XT (~380 €)',
+      motherboard: 'Gigabyte B650M Gaming X (~140 €)',
       ram: '32 Go DDR5 6000MHz CL30 (~115 €)',
       storage: '1 To NVMe PCIe 4.0 (~75 €)',
-      motherboard: 'Gigabyte B650M Gaming X (~140 €)',
       psu: '650W 80+ Bronze (~70 €)',
       case: 'Corsair 3000D Airflow (~100 €)'
     },

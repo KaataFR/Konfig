@@ -15,12 +15,12 @@ const Budget1500 = () => {
     youtubeUrl: 'https://www.youtube.com/results?search_query=RX+7800+XT+%2B+Ryzen+5+9600X+gaming+benchmark+2025',
     topAchatUrl: 'https://www.topachat.com/pages/configomatic/42bafafd-6f92-49fa-b86a-8aa9370f78d2',
     components: {
+      gpu: 'AMD Radeon RX 7800 XT (~600 €)',
       cpu: 'AMD Ryzen 5 9600X (~250 €)',
       cooling: 'Thermalright Phantom Spirit 120 SE (~42 €)',
-      gpu: 'AMD Radeon RX 7800 XT (~600 €)',
+      motherboard: 'MSI PRO B650-S WIFI (~155 €)',
       ram: '32 Go DDR5 6000MHz CL30 (~135 €)',
       storage: '1 To Kingston KC3000 NVMe (~85 €)',
-      motherboard: 'MSI PRO B650-S WIFI (~155 €)',
       psu: 'be quiet! Pure Power 12 M 750W (~125 €)',
       case: 'Corsair 4000D Airflow (~110 €)'
     },

@@ -15,12 +15,12 @@ const Budget800 = () => {
     youtubeUrl: 'https://www.youtube.com/results?search_query=RTX+5060+%2B+Ryzen+5+5600+gaming+benchmark+2025',
     topAchatUrl: 'https://www.topachat.com/pages/configomatic/65e00e53-7eed-4861-80f6-159d2b1fe8f4',
     components: {
+      gpu: 'NVIDIA GeForce RTX 5060 (~300 €)',
       cpu: 'AMD Ryzen 5 5600 (~125 €)',
       cooling: 'AMD Wraith Stealth (inclus avec le CPU)',
-      gpu: 'NVIDIA GeForce RTX 5060 (~300 €)',
+      motherboard: 'Gigabyte B550M DS3H (~95 €)',
       ram: '16 Go DDR4 3600MHz CL18 (~55 €)',
       storage: '1 To SSD Kingston NV2 (~65 €)',
-      motherboard: 'Gigabyte B550M DS3H (~95 €)',
       psu: 'MSI MAG A550BN 550W (~55 €)',
       case: 'BitFenix Nova Mesh SE (~55 €)'
     },
@@ -33,7 +33,7 @@ const Budget800 = () => {
       { game: 'Call of Duty: Warzone (1080p Élevé)', fps: '75-85 FPS' },
       { game: 'Elden Ring (1080p Ultra)', fps: '60 FPS' }
     ],
-    notes: " (MAJ : 14/06/2025) - Prix total : ~750 €. Plateforme AM4 mature et abordable pour maximiser l'allocation du budget sur la carte graphique RTX 5060. Chaque composant optimisé pour le rapport performance/prix.",
+    notes: " (MAJ : 14/06/2025) - Prix total : ~800 €. Plateforme AM4 mature et abordable pour maximiser l'allocation du budget sur la carte graphique RTX 5060. Chaque composant optimisé pour le rapport performance/prix.",
     highlights: ['RTX 5060', '1080p Gaming', 'Ventirad', '80 FPS moyen']
   };
 
